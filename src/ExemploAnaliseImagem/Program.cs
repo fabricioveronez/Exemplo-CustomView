@@ -3,7 +3,7 @@ using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction;
 using System.IO;
 using Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models;
 
-namespace ExemploAnalise
+namespace ExemploAnaliseImagem
 {
     class Program
     {
