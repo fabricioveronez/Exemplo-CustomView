@@ -31,6 +31,8 @@ namespace ExemploClassificacao
             // Carrego as imagens de poodle
             string[] imagensPoodle = Directory.GetFiles(Path.Combine("Amostras", "Poodle")).ToArray();
 
+            Console.WriteLine("Cadastrando as imagens de shitzu.");
+
             // Cadastro das imagens de shitzu
             foreach (var imagem in imagensShitzu)
             {
@@ -39,6 +41,8 @@ namespace ExemploClassificacao
                     trainingApi.CreateImagesFromData(new Guid(idProjeto), stream, new List<string>() { shitzuTag.Id.ToString() });
                 }
             }
+
+            Console.WriteLine("Cadastrando as imagens de poodle.");
 
             // Cadastro das imagens de poodle
             foreach (var imagem in imagensPoodle)
@@ -51,6 +55,8 @@ namespace ExemploClassificacao
 
             // Inicio o treinamento com as imagens cadastradas.
             Iteration interacao = trainingApi.TrainProject(new Guid(idProjeto));
+
+            Console.WriteLine("Treinando.");
 
             // Verifico periodicamente até concluir
             while (interacao.Status == "Training")
@@ -68,4 +74,3 @@ namespace ExemploClassificacao
         }
     }
 }
-// https://github.com/Azure-Samples/cognitive-services-dotnet-sdk-samples/blob/master/CustomVision/ImageClassification/Program.cs
