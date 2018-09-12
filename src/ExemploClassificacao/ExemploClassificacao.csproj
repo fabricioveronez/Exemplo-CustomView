@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Amostras\Poodle\Poodle01.jpg" />
+    <None Remove="Amostras\Poodle\Poodle02.jpg" />
+    <None Remove="Amostras\Poodle\Poodle03.jpg" />
+    <None Remove="Amostras\Poodle\Poodle04.jpg" />
+    <None Remove="Amostras\Poodle\Poodle05.jpg" />
+    <None Remove="Amostras\Poodle\Poodle06.jpg" />
+    <None Remove="Amostras\Poodle\Poodle07.jpg" />
+    <None Remove="Amostras\Poodle\Poodle08.jpg" />
+    <None Remove="Amostras\Poodle\Poodle09.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu01.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu02.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu03.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu04.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu05.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu06.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu07.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu08.jpg" />
+    <None Remove="Amostras\Shitzu\Shitzu09.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Amostras\Poodle\Poodle01.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle02.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle03.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle04.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle05.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle06.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle07.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle08.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Poodle\Poodle09.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu01.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu02.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu03.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu04.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu05.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu06.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu07.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu08.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Amostras\Shitzu\Shitzu09.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training" Version="0.12.0-preview" />
+  </ItemGroup>
+
+</Project>
